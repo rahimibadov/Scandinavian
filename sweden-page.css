@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    }
+    
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+        background-color: cornsilk;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container1{
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        
+    }
+    .container1 span{
+        font-size: 40px;
+        color: #fcd116;
+        text-shadow: 0 4px blue;
+    }
+    .container2{
+        width: 100%;
+        height: 500px;
+        background-image: url(./img/Flag_of_Sweden.svg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .container2 .screen{
+        width: 50%;
+        height: 190px;
+        color: rgb(254, 254, 254);
+        position: relative;
+        top: -70px;
+        left: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .container2 .screen #demoP{
+        font-size: 25px;
+        color: #fcd116;
+    }
+    
+    
+    .container1 .input-button{
+        width:60% ;
+        height:75px ;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1 #myInput{
+        width: 70%;
+        height: 40px;
+        border:2px solid #fcd116 ;
+        background: transparent;
+        font-size: 25px;
+
+    }
+    .container1 #demoButton{
+        width: 70%;
+        height: 40px;
+        background: transparent;
+        border:2px solid #fcd116 ;
+        color:blue;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 1320px){
+        
+        .container2 .screen{
+            left: 20%;  
+            top: -25%;
+        }
+        .container2 .screen #demoP{
+            font-size:2vw;
+            word-wrap: break-word;
+            padding: 15px;
+        }
+        .container1 .input-button{
+            position: relative;
+            top: -23%;
+        }
+    }
+    @media screen and (max-width: 990px){
+        .container2 .screen{  
+            top: -27%;
+        }
+ 
+        .container1 .input-button{
+            position: relative;
+            top: -43%;
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 760px){
+        .container1 span{
+            font-size: 25px;
+        }
+        .container2 .screen{
+            left: 20%;  
+            top: -25%;
+        }
+        
+        .container1 .input-button{
+            height: 50px;
+            top: -35%;
+        }
+        .container1 #myInput{
+            height: 25px;
+            font-size: 14px;
+    
+        }
+        .container1 #demoButton{
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+
+
+    @media screen and (max-width: 550px){
+        
+        .container2 .screen{
+            top: -30%;
+        }
+        .container1 .input-button{
+            height: 40px;
+            top: -40%;
+    
+        }
+        .container1 #myInput{
+            height: 20px;
+      
+    
+        }
+        .container1 #demoButton{
+            height: 20px;
+
+        }
+        
+    }

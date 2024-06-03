@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    }
+    
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+        background-color: cornsilk;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .norway-container1{
+        width: 50%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+
+    }
+    .norway-container1 span{
+        font-size: 40px;
+        color: #fcd116;
+        text-shadow: 0 4px blue;
+    }
+    .norway-container2{
+        width: 100%;
+        height: 600px;
+        background-image: url(./img/Flag_of_Norway.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .norway-container2 .norway-screen{
+        width: 45%;
+        height: 210px;
+        color: rgb(254, 254, 254);
+        position: relative;
+        top: -80px;
+        right: -87px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .norway-container2 .norway-screen #norway-demoP{
+        font-size: 30px;
+        color: #00205B;
+        font-weight: 700;
+    }
+    
+    
+    .norway-container1 .norway-input-button{
+        width:60% ;
+        height:75px ;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .norway-container1 #norway-myInput{
+        width: 70%;
+        height: 40px;
+        border:2px solid #fcd116 ;
+        background: transparent;
+        font-size: 25px;
+
+    }
+    .norway-container1 #norway-demoButton{
+        width: 70%;
+        height: 40px;
+        background: transparent;
+        border:2px solid #fcd116 ;
+        color:blue;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 1220px){
+        .norway-container1{
+            height:500px ;
+        }
+        
+        .norway-container2 .norway-screen{
+            left: 20%;  
+            top: -25%;
+        }
+        .norway-container2 .norway-screen .norway-#demoP{
+            font-size:20px;
+            word-wrap: break-word;
+            padding: 5px;
+        }
+    }
+    @media screen and (max-width: 970px){
+
+        .norway-container2 .norway-screen{  
+            top: -27%;
+        }
+ 
+        .norway-container1 .norway-input-button{
+            position: relative;
+            top: -5%;
+          
+        }
+        .norway-container1 #norway-demoButton{
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 790px){
+        .norway-container1 span{
+            font-size: 25px;
+        }
+        .norway-container2 .norway-screen{
+            left: 20%;  
+            top: -25%;
+        }
+        
+        .norway-container1 .norway-input-button{
+            height: 50px;
+            top: -20%;
+        }
+        .norway-container1 #norway-myInput{
+            height: 25px;
+            font-size: 14px;
+    
+        }
+        .norway-container1 #norway-demoButton{
+            height: 25px;
+            font-size: 14px;
+        }
+        .norway-container2 .norway-screen #norway-demoP{
+            font-size: 15px;
+            color: #00205B;
+            font-weight: 40;
+        }
+    }
+
+
+    @media screen and (max-width: 650px){
+        
+        .norway-container2 .norway-screen{
+            top: -30%;
+        }
+        .norway-container1 .norway-input-button{
+            height: 40px;
+            top: -30%;
+    
+        }
+        .norway-container1 #norway-myInput{
+            height: 20px;
+      
+    
+        }
+        .norway-container1 #norway-demoButton{
+            height: 20px;
+
+        }
+        
+    }
